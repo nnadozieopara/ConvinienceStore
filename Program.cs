@@ -47,6 +47,8 @@ namespace ConvinienceStoreModel
             Manager manager = myStore.StoreManager;
             manager.SetManagerDetails("Tunde", "Imhonode");
             myStore.StoreManager.HireCashier("Dozie", "Opara", "DozieWay, Lagos", myStore); 
+            myStore.StoreManager.HireCashier("Bimbe", "Okoya", "Ozumba Mbadiwe",myStore);
+            myStore.Cashiers[0].SellProduct(productAndQuantityList, 6000m);
             #endregion
         }
     }
